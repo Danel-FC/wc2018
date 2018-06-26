@@ -12,6 +12,7 @@ import { GameComponent } from './game/game.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import { GroupsComponent } from './groups/groups.component';
 
 const routes: Routes = [
   { path: '', component: GamesComponent },
@@ -24,7 +25,8 @@ const routes: Routes = [
     AppComponent,
     GamesComponent,
     StandingsComponent,
-    GameComponent    
+    GameComponent,
+    GroupsComponent    
   ],
   imports: [
     BrowserModule,
