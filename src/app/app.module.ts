@@ -13,10 +13,14 @@ import { GameComponent } from './game/game.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { GroupsComponent } from './groups/groups.component';
+import { EighthComponent } from './eighth/eighth.component';
+
+import { Ng2FilterPipeModule } from 'ng2-filter-pipe';
 
 const routes: Routes = [
   { path: '', component: GamesComponent },
   { path: 'games', component: GamesComponent },
+  { path: 'eighth', component: EighthComponent },
   { path: 'standings', component: StandingsComponent }
 ];
 
@@ -26,7 +30,8 @@ const routes: Routes = [
     GamesComponent,
     StandingsComponent,
     GameComponent,
-    GroupsComponent    
+    GroupsComponent,
+    EighthComponent    
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     HttpClientModule,
     BrowserAnimationsModule,
-    NoopAnimationsModule    
+    NoopAnimationsModule ,
+    Ng2FilterPipeModule   
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]

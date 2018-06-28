@@ -1,7 +1,7 @@
 <br>
 <div class="card border-primary mb-3 text-center container"  style="max-width: 50rem;" (mouseenter) ="mouseEnter(game)"  (mouseleave) ="mouseLeave(game)">
   <div class="card-header">
-      {{game.Group}} ({{game.MatchTime | date: 'EEEE dd/MM HH:mm'}})
+      {{game.Stage==1?game.Group:''}} ({{game.MatchTime | date: 'EEEE dd/MM HH:mm'}})
       
   </div>
   <div class="card-body">

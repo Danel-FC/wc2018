@@ -1,1 +1,1 @@
-<app-game *ngFor="let game of data.games" [game]="game"></app-game>
+<app-game *ngFor="let game of data.games | filterBy: {Stage:1}" [game]="game"></app-game>
