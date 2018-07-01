@@ -24,6 +24,7 @@
     "@angular/router": "^6.0.3",
     "core-js": "^2.5.4",
     "hammerjs": "^2.0.8",
+    "ng2-filter-pipe": "^0.1.10",
     "rxjs": "^6.0.0",
     "time-ago-pipe": "^1.3.2",
     "zone.js": "^0.8.26"
