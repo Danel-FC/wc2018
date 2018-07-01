@@ -55,9 +55,9 @@ export class GameComponent implements OnInit, OnDestroy {
     this.subscription.unsubscribe();
   }
 
-  getImg(team:string):string{
-    return `../../wc18/assets/${team.toLowerCase().replace(' ','-')}.png`;
-  }
+  // getImg(team:string):string{
+  //   return `../../assets/${team.toLowerCase().replace(' ','-')}.png`;
+  // }
 
   predict(){
     this.data.editingGame=this.game;
