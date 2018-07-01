@@ -1,7 +1,3 @@
-<p>
-  groups works! 1
-</p>
-<p>
-  conflict
-  groups works! conflict
-</p>
+<div *ngIf="data.games" >
+<app-group *ngFor="let group of data.groupTables" [teams]="group.teams" [title]="group.group"></app-group>
+</div>

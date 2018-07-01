@@ -16,12 +16,16 @@ import { GroupsComponent } from './groups/groups.component';
 import { EighthComponent } from './eighth/eighth.component';
 
 import { Ng2FilterPipeModule } from 'ng2-filter-pipe';
+import { GroupComponent } from './group/group.component';
+
+
 
 const routes: Routes = [
   { path: '', component: GamesComponent },
   { path: 'games', component: GamesComponent },
   { path: 'eighth', component: EighthComponent },
-  { path: 'standings', component: StandingsComponent }
+  { path: 'standings', component: StandingsComponent },
+  { path: 'groups', component: GroupsComponent }
 ];
 
 @NgModule({
@@ -31,7 +35,8 @@ const routes: Routes = [
     StandingsComponent,
     GameComponent,
     GroupsComponent,
-    EighthComponent    
+    EighthComponent,
+    GroupComponent
   ],
   imports: [
     BrowserModule,
