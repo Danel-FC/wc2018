@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { DataService } from './data.service';
 
 @Component({
@@ -9,13 +9,18 @@ import { DataService } from './data.service';
 export class AppComponent {
   user:string;
   pass:string;
+  invalidLogin:boolean=false;
 
+  @ViewChild('closeModalButton') 
+  closeModalButton: ElementRef;
+  
   constructor(public data:DataService) { }
 
   onOkClick(): void {
     this.data.login(this.user, this.pass, (success:boolean) => {
+      this.invalidLogin=!success;
       if(success){
-        this.data.getPredictions();
+        this.closeModalButton.nativeElement.click();
       }
     });
   }

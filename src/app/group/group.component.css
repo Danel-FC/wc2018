@@ -1,0 +1,8 @@
+.country{
+    float: left;
+}
+
+.country-name{
+    margin-left: 10px;
+    margin-right: 10px;
+}

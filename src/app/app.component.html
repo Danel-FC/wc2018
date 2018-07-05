@@ -57,10 +57,14 @@
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password" [(ngModel)]="pass">
               </div>
+              <div class="form-group has-danger" *ngIf="invalidLogin">
+                  <div class="text-danger">Invalid user name or password.</div>
+                </div>
         </div>
+        
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="onOkClick()">OK</button>
+          <button type="button" class="btn btn-secondary" #closeModalButton data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="onOkClick()">OK</button>
         </div>
       </div>
     </div>

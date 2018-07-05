@@ -22,7 +22,7 @@ export class DataService {
   }
 
   getImg(team:string):string{
-    return `../../assets/${team.toLowerCase().replace(' ','-')}.png`;
+    return `../../wc18/assets/${team.toLowerCase().replace(' ','-')}.png`;
   }
   
   get groupTables():any[]{
