@@ -19,6 +19,7 @@ import { Ng2FilterPipeModule } from 'ng2-filter-pipe';
 import { GroupComponent } from './group/group.component';
 import { QuaterFinalsComponent } from './quater-finals/quater-finals.component';
 import { SemiFinalComponent } from './semi-final/semi-final.component';
+import { FinalComponent } from './final/final.component';
 
 
 
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'eighth', component: EighthComponent },
   { path: 'quater-finals', component: QuaterFinalsComponent },
   { path: 'semi-finals', component: SemiFinalComponent },
+  { path: 'final', component: FinalComponent },
   { path: 'standings', component: StandingsComponent },
   { path: 'groups', component: GroupsComponent }
 ];
@@ -42,7 +44,8 @@ const routes: Routes = [
     EighthComponent,
     GroupComponent,
     QuaterFinalsComponent,
-    SemiFinalComponent
+    SemiFinalComponent,
+    FinalComponent
   ],
   imports: [
     BrowserModule,
