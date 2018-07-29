@@ -19,6 +19,7 @@ export class DataService {
     // this.login('Eli','rm13',(success)=>{});
     this.getGames();
     this.getStandings();
+    
   }
 
   getImg(team:string):string{
